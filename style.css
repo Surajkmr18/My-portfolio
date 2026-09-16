@@ -465,7 +465,7 @@ img {
     align-items: center;
     justify-content: center;
 
-    min-width: 138px;
+    min-width: 100px;
     padding: 12px 25px;
 
     color: #fff;
