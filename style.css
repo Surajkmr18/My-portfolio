@@ -1194,69 +1194,6 @@ img {
     font-size: 13px;
 }
 
-
-/* NEW */
-
-.contact-actions {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 12px;
-
-    margin-top: 30px;
-}
-
-.contact-action {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    padding: 11px 18px;
-
-    border-radius: 25px;
-
-    font-size: 11px;
-
-    font-weight: 800;
-
-    transition: 0.3s;
-}
-
-.email-action {
-    background: var(--green);
-
-    color: #080b0c;
-
-    border: 1px solid var(--green);
-}
-
-.email-action:hover {
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 10px 25px rgba(200, 255, 0, 0.18);
-}
-
-.whatsapp-action {
-    border: 1px solid var(--green);
-
-    color: var(--green);
-}
-
-.whatsapp-action:hover {
-    background: var(--green);
-
-    color: #080b0c;
-
-    transform: translateY(-3px);
-}
-
-
-
-
-
 .contact-form {
     display: flex;
     flex-direction: column;
