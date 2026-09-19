@@ -920,49 +920,60 @@ img {
 @media (max-width: 768px) {
 
     .portfolio-carousel {
+        width: 100%;
         gap: 8px;
+    }
+
+    .portfolio-viewport {
+        flex: 1;
+        min-width: 0;
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .portfolio-grid {
+        gap: 0;
+        width: 100%;
     }
 
     .portfolio-item {
         flex: 0 0 100%;
+        width: 100%;
         height: 380px;
+        min-width: 100%;
     }
 
     .portfolio-arrow {
         width: 40px;
         height: 40px;
-        flex-basis: 40px;
-
+        flex: 0 0 40px;
         font-size: 20px;
-    }
-
-    .portfolio-viewport {
-        padding: 3px;
     }
 }
 
 
 /* SMALL MOBILE */
-
 @media (max-width: 450px) {
 
+    .portfolio-carousel {
+        gap: 5px;
+    }
+
     .portfolio-item {
+        flex: 0 0 100%;
+        min-width: 100%;
+        width: 100%;
         height: 300px;
     }
 
     .portfolio-arrow {
         width: 35px;
         height: 35px;
-        flex-basis: 35px;
-
+        flex: 0 0 35px;
         font-size: 18px;
     }
-
-    .portfolio-carousel {
-        gap: 5px;
-    }
 }
-
 /* =========================
    WHY WORK WITH ME
 ========================= */
