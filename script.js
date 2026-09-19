@@ -241,23 +241,30 @@ function updatePortfolio() {
   });
 
 
-  // Calculate card width//
+  // Calculate card width
   const viewport = document.querySelector(".portfolio-viewport");
 
-if (!viewport || filteredItems.length === 0) return;
+  if (!viewport || filteredItems.length === 0) return;
 
-const firstItem = filteredItems[0];
+  const viewportWidth = viewport.clientWidth;
 
-const cardWidth = firstItem.getBoundingClientRect().width;
+  let cardWidth;
+  let gap = 20;
 
-const gap =
-  window.innerWidth <= 768 ? 0 : 20;
+  if (itemsPerPage === 3) {
 
-const moveDistance =
-  currentPage * (cardWidth + gap) * itemsPerPage;
+    cardWidth = (viewportWidth - (gap * 2)) / 3;
 
-portfolioGrid.style.transform =
-  `translate3d(-${moveDistance}px, 0, 0)`;
+  } else if (itemsPerPage === 2) {
+
+    cardWidth = (viewportWidth - gap) / 2;
+
+  } else {
+
+    cardWidth = viewportWidth;
+
+  }
+
 
   // Move slider
   const moveDistance =
