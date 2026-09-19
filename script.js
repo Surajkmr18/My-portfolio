@@ -241,7 +241,7 @@ function updatePortfolio() {
   });
 
 
-  // Calculate card width
+  // Calculate card width//
   const viewport = document.querySelector(".portfolio-viewport");
 
 if (!viewport || filteredItems.length === 0) return;
